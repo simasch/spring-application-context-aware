@@ -18,7 +18,7 @@ public class ApplicationContextHolder implements ApplicationContextAware {
     }
 
     public static <T> T getBean(Class<T> type) {
-        LOGGER.info("setApplicationContext: {}", applicationContext);
+        LOGGER.info("applicationContext: {}", applicationContext);
 
         T bean = applicationContext.getBean(type);
 

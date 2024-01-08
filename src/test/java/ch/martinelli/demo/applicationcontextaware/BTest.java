@@ -9,7 +9,7 @@ import org.springframework.context.ApplicationContext;
 
 import static org.junit.jupiter.api.Assertions.assertSame;
 
-@SpringBootTest
+@SpringBootTest(properties = "foo=bar")
 class BTest {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(BTest.class);
