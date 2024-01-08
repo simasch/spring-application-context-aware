@@ -8,8 +8,7 @@ public class SomeClass {
     private static final Logger LOGGER = LoggerFactory.getLogger(SomeClass.class);
 
     public void foo() {
-
-
+        LOGGER.info("foo(): {}", this);
         ApplicationContextHolder.getBean(SomeBean.class).bar();
     }
 }
