@@ -23,6 +23,10 @@ public class ApplicationContextHolder implements ApplicationContextAware {
         return bean;
     }
 
+    public static ApplicationContext getApplicationContext() {
+        return applicationContext;
+    }
+
     @Override
     public void setApplicationContext(ApplicationContext applicationContext) {
         LOGGER.info("setApplicationContext: {}", applicationContext.getId());
